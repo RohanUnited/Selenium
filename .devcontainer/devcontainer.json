@@ -1,0 +1,16 @@
+{
+  "name": "Java Selenium Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "installOhMyZsh": "true",
+      "installAptPackages": "true"
+    },
+    "ghcr.io/devcontainers/features/headless:1": {}
+  },
+  "postCreateCommand": "bash -c \"wget -qO- https://raw.githubusercontent.com/microsoft/vscode-dev-containers/main/script-library/docs/chrome-debian.md | bash\""
+}
